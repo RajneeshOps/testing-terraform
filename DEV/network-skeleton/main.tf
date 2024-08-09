@@ -5,14 +5,14 @@ module "network_skeleton" {
   instance_tenancy = "default"
   vpc_name = "my-vpc"
   public_subnet_cidr = ["10.0.0.0/28", "10.0.0.16/28"]
-  public_sub_az = ["us-east-1a", "us-east-1b"]
+  public_sub_az = ["ap-south-1a", "ap-south-1a"]
   map_public_ip_on_launch = true
   public_subnet_name = "public"
   public_subnet_tags = {
     Environment = "dev"
   }
   private_subnet_cidr = ["10.0.0.32/28", "10.0.0.48/28" , "10.0.0.64/28"]
-  private_sub_az = ["us-east-1a", "us-east-1a" , "us-east-1a"]
+  private_sub_az = ["ap-south-1a", "ap-south-1a" , "ap-south-1a"]
 
  private_subnet_tags = [
   {
